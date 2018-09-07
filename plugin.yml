@@ -4,35 +4,35 @@ version: 1.0.2
 api: [3.0.0-ALPHA12, 3.0.0]
 load: POSTWORLD
 author: AndreasHGK
-description: A plugin that makes money into an item to trade with!
 softdepend: ["EconomyAPI"]
 
 commands:
  note:
-  description: "Withdraw money and put it on a bank note"
+  description: ""
   usage: "/note {amount}"
+  aliases: ["withdraw"]
   permission: banknotes.get
  banknote:
-  description: "Withdraw money and put it on a bank note"
+  description: ""
   usage: "/banknote {amount}"
   permission: banknotes.get
  banknotes:
-  description: "Withdraw money and put it on a bank note"
+  description: ""
   usage: "/banknotes {amount}"
   permission: banknotes.get
  deposit:
-  description: "Deposit a note to your account"
+  description: ""
   usage: "/deposit"
   permission: banknotes.deposit
 
 permissions:
  banknotes:
   default: true
-  description: "bankNotes root permission (useless)"
+  description: ""
   children:
    banknotes.get:
     default: true
-    description: "allow players to withdraw banknotes"
+    description: ""
    banknotes.deposit:
     default: true
-    description: "allow players to deposit banknotes"
+    description: ""
